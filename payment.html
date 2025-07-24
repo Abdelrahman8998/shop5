@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>اختيار طريقة الدفع</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            body: ['"Cairo"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-body min-h-screen flex flex-col">
+
+  <header class="bg-white shadow px-4 py-3 text-center text-lg font-bold text-blue-600">
+    اختر طريقة الدفع
+  </header>
+
+  <main class="flex-1 px-4 py-6">
+    <div class="space-y-4 max-w-md mx-auto">
+
+      <!-- محفظة الموبايل -->
+      <a href="/payment/wallet.html" class="flex items-center bg-white rounded-xl shadow hover:shadow-md transition hover:scale-[1.02] p-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" alt="محفظة الموبايل" class="w-12 h-12 rounded-full object-cover ml-4">
+        <p class="text-sm font-semibold text-gray-800">محافظ الموبايل</p>
+      </a>
+
+      <!-- بطاقة بنكية -->
+      <a href="/payment/card.html" class="flex items-center bg-white rounded-xl shadow hover:shadow-md transition hover:scale-[1.02] p-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/633/633611.png" alt="بطاقة بنكية" class="w-12 h-12 rounded-full object-cover ml-4">
+        <p class="text-sm font-semibold text-gray-800">Card Payment</p>
+      </a>
+
+      <!-- بطاقة ميزة -->
+      <a href="/payment/meeza.html" class="flex items-center bg-white rounded-xl shadow hover:shadow-md transition hover:scale-[1.02] p-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Meeza_Card_logo.svg/512px-Meeza_Card_logo.svg.png" alt="Meeza" class="w-12 h-12 rounded-full object-cover ml-4">
+        <p class="text-sm font-semibold text-gray-800">Meeza Card</p>
+      </a>
+
+      <!-- فوري -->
+      <a href="/payment/fawry.html" class="flex items-center bg-white rounded-xl shadow hover:shadow-md transition hover:scale-[1.02] p-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Fawry_logo.svg/512px-Fawry_logo.svg.png" alt="فوري" class="w-12 h-12 rounded-full object-cover ml-4">
+        <p class="text-sm font-semibold text-gray-800">Fawry</p>
+      </a>
+
+    </div>
+  </main>
+
+  <footer class="bg-white shadow-inner border-t border-gray-200 text-center text-xs text-gray-500 py-4">
+    © 2025 جميع الحقوق محفوظة
+  </footer>
+
+</body>
+</html>

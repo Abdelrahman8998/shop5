@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الهيدر والفوتر فقط</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            body: ['"Cairo"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-body flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="md:max-lg:flex lg:hidden flex items-center justify-between px-4 py-3 bg-white shadow-md">
+    <!-- Logo -->
+    <div class="text-xl font-bold text-blue-600">
+      Logo
+    </div>
+
+    <!-- Left: Search + Buttons -->
+    <div class="flex items-center space-x-2 space-x-reverse">
+      <!-- Search Icon -->
+      <button class="text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+      </button>
+
+      <!-- Sign Up -->
+      <button class="text-sm bg-blue-600 text-white px-2 py-1 rounded-md hover:bg-blue-700">
+        تسجيل
+      </button>
+
+      <!-- Login -->
+      <button class="text-sm bg-gray-300 text-gray-800 px-2 py-1 rounded-md hover:bg-gray-400">
+        تسجيل الدخول
+      </button>
+    </div>
+  </header>
+
+  <main class="flex-1 px-4 py-6">
+    <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-4 space-x-reverse max-w-sm mx-auto">
+      <!-- الصورة مربعة بحواف دائرية -->
+      <img src="images/Pubg Mobile logo.jpg" alt="صورة"
+           class="w-20 h-20 rounded-lg object-cover border-2 border-blue-500">
+      
+      <!-- الاسم -->
+      <div>
+        <p class="text-lg font-semibold text-gray-800">Pubg Mobile</p>
+        <p class="text-sm text-gray-500">ادفع بسهولة وامان ، متوفر جميع طرق الدفع</p>
+      </div>
+    </div>
+  </main>
+
+<section class="px-4 pb-10">
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+    
+    <!-- أيقونة 1 -->
+    <a href="payment.html" class="block bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition hover:scale-105 text-center p-3">
+      <img src="https://cdn.midasbuy.com/images/apps/pubgm/1599546041426W8hmErMS.png" alt="product" class="mx-auto mb-2 rounded-lg object-cover">
+      <p class="text-sm font-bold text-green-600">45 ج.م</p>
+      <p class="text-xs text-gray-500 line-through">60 ج.م</p>
+    </a>
+
+    <!-- أيقونة 2 -->
+    <a href="payment.html" class="block bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition hover:scale-105 text-center p-3">
+      <img src="https://cdn.midasbuy.com/images/apps/pubgm/1599546041426W8hmErMS.png" alt="product" class="mx-auto mb-2 rounded-lg object-cover">
+      <p class="text-sm font-bold text-green-600">80 ج.م</p>
+      <p class="text-xs text-gray-500 line-through">100 ج.م</p>
+    </a>
+
+    <!-- أيقونة 3 -->
+    <a href="payment.html" class="block bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition hover:scale-105 text-center p-3">
+      <img src="https://cdn.midasbuy.com/images/apps/pubgm/1599546041426W8hmErMS.png" alt="product" class="mx-auto mb-2 rounded-lg object-cover">
+      <p class="text-sm font-bold text-green-600">30 ج.م</p>
+      <p class="text-xs text-gray-500 line-through">50 ج.م</p>
+    </a>
+
+    <!-- أيقونة 4 -->
+    <a href="payment.html" class="block bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition hover:scale-105 text-center p-3">
+      <img src="https://cdn.midasbuy.com/images/apps/pubgm/1599546041426W8hmErMS.png" alt="product" class="mx-auto mb-2 rounded-lg object-cover">
+      <p class="text-sm font-bold text-green-600">120 ج.م</p>
+      <p class="text-xs text-gray-500 line-through">150 ج.م</p>
+    </a>
+
+    <!-- أيقونة 5 -->
+    <a href="payment.html" class="block bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition hover:scale-105 text-center p-3">
+      <img src="https://cdn.midasbuy.com/images/apps/pubgm/1599546041426W8hmErMS.png" alt="product" class="mx-auto mb-2 rounded-lg object-cover">
+      <p class="text-sm font-bold text-green-600">65 ج.م</p>
+      <p class="text-xs text-gray-500 line-through">85 ج.م</p>
+    </a>
+
+    <!-- أيقونة 6 -->
+    <a href="payment.html" class="block bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition hover:scale-105 text-center p-3">
+      <img src="https://cdn.midasbuy.com/images/apps/pubgm/1599546041426W8hmErMS.png" alt="product" class="mx-auto mb-2 rounded-lg object-cover">
+      <p class="text-sm font-bold text-green-600">25 ج.م</p>
+      <p class="text-xs text-gray-500 line-through">40 ج.م</p>
+    </a>
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="md:max-lg:block lg:hidden bg-white shadow-inner mt-auto border-t border-gray-200 px-4 py-5">
+    <div class="text-center mb-4">
+      <p class="text-sm font-semibold text-gray-700 mb-2">روابط مهمة</p>
+      <div class="flex justify-center space-x-4 space-x-reverse text-sm text-blue-600">
+        <a href="#">من نحن</a>
+        <a href="#">تواصل معنا</a>
+        <a href="#">سياسة الخصوصية</a>
+      </div>
+    </div>
+
+    <div class="text-center mb-3">
+      <p class="text-sm font-semibold text-gray-700 mb-2">تابعنا على</p>
+      <div class="flex justify-center space-x-4 space-x-reverse text-gray-600">
+        <!-- Facebook -->
+        <a href="#" aria-label="فيسبوك">
+          <svg class="w-6 h-6 hover:text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H8.1v-2.89h2.34V9.84c0-2.3 1.37-3.57 3.47-3.57.99 0 2.02.18 2.02.18v2.22h-1.14c-1.12 0-1.47.7-1.47 1.42v1.7h2.5l-.4 2.89h-2.1v6.99C18.34 21.12 22 16.99 22 12z"/>
+          </svg>
+        </a>
+        <!-- Instagram -->
+        <a href="#" aria-label="انستجرام">
+          <svg class="w-6 h-6 hover:text-pink-500" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5.25-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/>
+          </svg>
+        </a>
+        <!-- Twitter -->
+        <a href="#" aria-label="تويتر">
+          <svg class="w-6 h-6 hover:text-sky-500" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22.46 6c-.77.35-1.6.59-2.46.69a4.23 4.23 0 001.85-2.34 8.33 8.33 0 01-2.66 1.01A4.17 4.17 0 0016.01 4a4.18 4.18 0 00-4.18 4.18c0 .33.04.65.11.96A11.84 11.84 0 013 5.14a4.16 4.16 0 001.29 5.57 4.18 4.18 0 01-1.89-.52v.05a4.18 4.18 0 003.35 4.1 4.26 4.26 0 01-1.89.07 4.19 4.19 0 003.91 2.91A8.37 8.37 0 012 19.55a11.79 11.79 0 006.29 1.84c7.55 0 11.68-6.26 11.68-11.68 0-.18-.01-.36-.02-.53A8.36 8.36 0 0022.46 6z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center text-xs text-gray-500 mt-4">
+      © 2025 جميع الحقوق محفوظة
+    </div>
+  </footer>
+
+</body>
+</html>

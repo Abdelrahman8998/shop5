@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الدفع عبر المحافظ الإلكترونية</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            body: ['"Cairo"', 'sans-serif'],
+          },
+          colors: {
+            primary: '#0D47A1',
+            accent: '#4CAF50',
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+</head>
+<body class="font-body bg-gradient-to-br from-blue-50 to-blue-100 min-h-screen flex items-center justify-center px-4">
+
+  <!-- بطاقة الدفع -->
+  <div class="bg-white shadow-2xl rounded-2xl p-6 md:p-8 w-full max-w-md text-center relative">
+
+    <!-- عنوان -->
+    <h1 class="text-2xl font-bold text-primary mb-6">الدفع عبر المحافظ الإلكترونية</h1>
+
+    <!-- صورة دائرية -->
+    <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png"
+         alt="Wallet"
+         class="w-28 h-28 rounded-full mx-auto mb-6 border-4 border-primary shadow-md transition hover:scale-105">
+
+    <!-- نص التحويل -->
+    <p class="text-gray-700 text-lg font-medium mb-2">
+      قم بتحويل مبلغ <span class="text-accent font-bold">80 ج.م</span> إلى الرقم التالي:
+    </p>
+
+    <!-- رقم التحويل -->
+    <div class="bg-gray-100 py-2 px-4 rounded-lg shadow-inner text-xl font-bold text-primary mb-6 select-all">
+      01070817647
+    </div>
+
+    <!-- إدخال رقم المستخدم -->
+    <div class="text-right mb-4">
+      <label class="block mb-1 text-sm font-semibold text-gray-600">رقمك الذي حوّلت منه:</label>
+      <input type="tel" placeholder="مثال: 01098765432"
+             class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-sm">
+    </div>
+
+<!-- رفع إثبات الدفع (تصميم صغير) -->
+<div class="text-right mb-6">
+  <label class="block mb-2 text-sm font-semibold text-gray-600">إرفاق صورة إثبات الدفع:</label>
+  
+  <label for="screenshot-upload" class="flex flex-col items-center justify-center w-full h-24 px-4 py-3 bg-gray-50 text-gray-500 rounded-lg border-2 border-dashed border-blue-300 cursor-pointer hover:bg-blue-50 transition">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-1 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4a2 2 0 012-2h6a2 2 0 012 2v12M7 16l-3 3m0 0l3 3m-3-3h16" />
+    </svg>
+    <span class="text-xs">رفع صورة (PNG / JPG)</span>
+    <input id="screenshot-upload" type="file" accept="image/*" class="hidden">
+  </label>
+</div>
+
+
+    <!-- زر التأكيد -->
+    <button class="w-full bg-accent text-white py-2 rounded-lg text-lg font-semibold shadow hover:bg-green-700 transition">
+      تأكيد الدفع
+    </button>
+
+    <!-- نسخة الحقوق -->
+    <p class="text-xs text-gray-400 mt-6">© 2025 جميع الحقوق محفوظة</p>
+  </div>
+
+</body>
+</html>
